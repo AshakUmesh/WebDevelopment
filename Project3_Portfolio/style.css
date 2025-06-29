@@ -1,0 +1,118 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #F0F0F0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  padding: 1rem;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+#logo img {
+  height: 40px;
+}
+
+nav label {
+  margin: 0 1rem;
+  color: #F0F0F0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav label:hover {
+  color: #1ABC9C;
+}
+
+.button {
+  background-color: #1ABC9C;
+  border: none;
+  color: #0D0D0D;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #16a085;
+}
+
+/* Main content layout */
+#main {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  gap: 10rem;
+  flex-wrap: wrap; /* mobile friendly */
+}
+
+/* Text content */
+#content {
+  flex: 1;
+  max-width: 800px;
+}
+
+#first_heading {
+  color: #1ABC9C;
+  font-size: 1.5rem;
+  font-family: 'Smooch', cursive;
+  margin-bottom: 0.5rem;
+}
+
+#second_heading,
+#third_heading {
+  font-size: 5rem;
+}
+#third_heading {
+  color: #1ABC9C;
+}
+
+#para {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Image styling */
+#my_image {
+  margin-left: 100px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  #main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #my_image {
+    margin-top: 1.5rem;
+    margin-left:100px ;
+  }
+}
+#para {
+  max-width: 100%;
+  width: 100%;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
